@@ -1,77 +1,124 @@
-:root{
---background:#e6eee6;
---text:#222222;
---meta:#555555;
---accent:#6e1e2e;
---signature:#9a9a9a;
+:root {
+  --background: #e6eee6;
+  --text: #222222;
+  --meta: #555555;
+  --accent: #6e1e2e;
+  --signature: #9a9a9a;
 }
 
-*{
-box-sizing:border-box;
+* {
+  box-sizing: border-box;
 }
 
-body{
-margin:0;
-background:var(--background);
-color:var(--text);
-font-family:"Source Serif 4", Georgia, serif;
-line-height:1.6;
--webkit-font-smoothing:antialiased;
-text-rendering:optimizeLegibility;
+html {
+  font-size: 100%;
 }
 
-.container{
-max-width:680px;
-margin:90px auto 80px auto;
-padding:0 22px;
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family: "Source Serif 4", Georgia, serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
-h1{
-margin:0 0 3rem 0;
-font-family:"Playfair Display", serif;
-font-size:2.1rem;
-letter-spacing:0.08em;
-font-weight:600;
+.container {
+  max-width: 680px;
+  margin: 90px auto 80px auto;
+  padding: 0 22px;
 }
 
-.entry{
-margin-bottom:2.6rem;
+h1 {
+  margin: 0 0 3.5rem 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 2.6rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--text);
 }
 
-h2{
-margin:0 0 .35rem 0;
-font-family:"Playfair Display", serif;
-font-size:1.65rem;
-font-weight:600;
+.entry {
+  margin: 0 0 2.8rem 0;
 }
 
-h2 a{
-color:var(--accent);
-text-decoration:none;
+h2 {
+  margin: 0 0 0.35rem 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.68rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
 }
 
-h2 a:hover{
-text-decoration:underline;
-text-underline-offset:3px;
+h2 a {
+  color: var(--accent);
+  text-decoration: none;
 }
 
-.meta{
-margin:0;
-color:var(--meta);
-font-size:.98rem;
+h2 a:hover,
+h2 a:focus {
+  text-decoration: underline;
+  text-underline-offset: 0.08em;
 }
 
-.signature{
-margin-top:4.5rem;
-text-align:center;
-font-size:.95rem;
+.meta {
+  margin: 0;
+  color: var(--meta);
+  font-size: 0.98rem;
+  line-height: 1.5;
 }
 
-.signature a{
-color:var(--signature);
-text-decoration:none;
+.signature {
+  margin: 4.8rem 0 0 0;
+  text-align: center;
+  font-size: 0.92rem;
+  letter-spacing: 0.12em;
 }
 
-.signature a:hover{
-text-decoration:none;
+.signature a {
+  color: var(--signature);
+  text-decoration: none;
+}
+
+.signature a:hover,
+.signature a:focus {
+  color: var(--signature);
+  text-decoration: none;
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .container {
+    max-width: 100%;
+    margin: 64px auto 56px auto;
+    padding: 0 20px;
+  }
+
+  h1 {
+    margin: 0 0 2.8rem 0;
+    font-size: 2.15rem;
+    letter-spacing: 0.12em;
+  }
+
+  .entry {
+    margin: 0 0 2.35rem 0;
+  }
+
+  h2 {
+    font-size: 1.42rem;
+    letter-spacing: 0.015em;
+  }
+
+  .meta {
+    font-size: 0.94rem;
+    line-height: 1.45;
+  }
+
+  .signature {
+    margin-top: 4rem;
+    font-size: 0.86rem;
+    letter-spacing: 0.10em;
+  }
 }
