@@ -1,9 +1,9 @@
 :root {
-  --background: #e6eee6;
-  --text: #222222;
-  --meta: #555555;
-  --accent: #6e1e2e;
-  --signature: #9a9a9a;
+  --bg: #ffffff;
+  --text: #111111;
+  --muted: #777777;
+  --signature: #999999;
+  --max-width: 680px;
 }
 
 * {
@@ -11,114 +11,113 @@
 }
 
 html {
-  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
   margin: 0;
-  background: var(--background);
+  background: var(--bg);
   color: var(--text);
-  font-family: "Source Serif 4", Georgia, serif;
+  font-family: 'Source Serif 4', serif;
   line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
 }
+
+/* --- Layout --- */
 
 .container {
-  max-width: 680px;
-  margin: 90px auto 80px auto;
-  padding: 0 22px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 100px 24px 80px;
 }
+
+/* --- Title --- */
 
 h1 {
-  margin: 0 0 3.5rem 0;
-  font-family: "Playfair Display", Georgia, serif;
-  font-size: 2.6rem;
+  font-family: 'Playfair Display', serif;
   font-weight: 600;
-  letter-spacing: 0.14em;
-  color: var(--text);
+  font-size: 1.4rem;
+  letter-spacing: 0.12em;
+  text-align: center;
+  margin: 0 0 60px;
 }
+
+/* --- Entries --- */
 
 .entry {
-  margin: 0 0 2.8rem 0;
+  margin-bottom: 36px;
 }
 
+/* --- Play titles --- */
+
 h2 {
-  margin: 0 0 0.35rem 0;
-  font-family: "Playfair Display", Georgia, serif;
-  font-size: 1.68rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  line-height: 1.2;
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 1.15rem;
+  margin: 0;
 }
 
 h2 a {
-  color: var(--accent);
   text-decoration: none;
+  color: inherit;
 }
 
-h2 a:hover,
-h2 a:focus {
-  text-decoration: underline;
-  text-underline-offset: 0.08em;
+h2 a:hover {
+  opacity: 0.6;
 }
+
+/* --- IAD series code --- */
+
+.series-code {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 4px;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+/* --- Meta line --- */
 
 .meta {
+  font-size: 0.8rem;
+  color: var(--muted);
   margin: 0;
-  color: var(--meta);
-  font-size: 0.98rem;
-  line-height: 1.5;
 }
 
+/* --- Signature --- */
+
 .signature {
-  margin: 4.8rem 0 0 0;
+  margin-top: 80px;
+  font-size: 0.75rem;
   text-align: center;
-  font-size: 0.92rem;
   letter-spacing: 0.12em;
+  color: var(--signature);
 }
 
 .signature a {
-  color: var(--signature);
   text-decoration: none;
+  color: inherit;
 }
 
-.signature a:hover,
-.signature a:focus {
-  color: var(--signature);
-  text-decoration: none;
-}
+/* --- Mobile refinements --- */
 
-/* Mobile */
-@media (max-width: 640px) {
+@media (max-width: 600px) {
+
   .container {
-    max-width: 100%;
-    margin: 64px auto 56px auto;
-    padding: 0 20px;
+    padding: 80px 20px 60px;
   }
 
   h1 {
-    margin: 0 0 2.8rem 0;
-    font-size: 2.15rem;
-    letter-spacing: 0.12em;
+    margin-bottom: 48px;
   }
 
   .entry {
-    margin: 0 0 2.35rem 0;
+    margin-bottom: 30px;
   }
 
-  h2 {
-    font-size: 1.42rem;
-    letter-spacing: 0.015em;
+  .series-code {
+    margin-bottom: 8px;
   }
 
-  .meta {
-    font-size: 0.94rem;
-    line-height: 1.45;
-  }
-
-  .signature {
-    margin-top: 4rem;
-    font-size: 0.86rem;
-    letter-spacing: 0.10em;
-  }
 }
