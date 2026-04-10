@@ -39,18 +39,6 @@ h1 {
   color: var(--text);
 }
 
-/* Subtitle */
-
-.subtitle {
-    text-align: center;
-    font-size: 32px;
-    margin-top: 2px;
-    margin-bottom: 30px;
-    letter-spacing: 0.03em;
-    color: #333333;
-    font-weight: 400;
-}
-
 .entry {
   margin: 0 0 2.8rem 0;
 }
