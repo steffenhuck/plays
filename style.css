@@ -43,14 +43,13 @@ h1 {
 /* --- SUPERSCRIPT NOTE --- */
 
 .note-sup {
-  font-size: 0.42em;
+  font-size: 0.46em;
   letter-spacing: 0.06em;
 
-  position: absolute;
-  left: 100%;
-  top: -0.35em;
+  margin-left: 0.18em;
 
-  margin-left: 0.35em;
+  position: relative;
+  top: -1.05em;
 
   color: var(--meta);
   text-decoration: none;
