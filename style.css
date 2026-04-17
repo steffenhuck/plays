@@ -46,10 +46,9 @@ h1 {
   font-size: 0.46em;
   letter-spacing: 0.06em;
 
-  margin-left: 0.18em;
-
+  margin-left: 0.24em;   /* was 0.18em → slight push right */
   position: relative;
-  top: -1.05em;
+  top: -1.12em;          /* was -1.05em → slight lift */
 
   color: var(--accent);
   text-decoration: none;
