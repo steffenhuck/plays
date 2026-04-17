@@ -45,12 +45,17 @@ h1 {
 .note-sup {
   font-size: 0.42em;
   letter-spacing: 0.06em;
-  margin-left: 0.25em;
-  position: relative;
-  top: -0.85em;
+
+  position: absolute;
+  left: 100%;
+  top: -0.35em;
+
+  margin-left: 0.35em;
+
   color: var(--meta);
   text-decoration: none;
   opacity: 0.85;
+
   white-space: nowrap;
 }
 
