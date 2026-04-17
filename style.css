@@ -51,7 +51,7 @@ h1 {
   position: relative;
   top: -1.05em;
 
-  color: var(--meta);
+  color: var(--accent);
   text-decoration: none;
   opacity: 0.85;
 
