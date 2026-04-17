@@ -43,18 +43,24 @@ h1 {
 /* --- SUPERSCRIPT NOTE --- */
 
 .note-sup {
-  font-size: 0.46em;
+  font-size: 0.48em;
   letter-spacing: 0.06em;
 
-  margin-left: 0.24em;   /* was 0.18em → slight push right */
   position: relative;
-  top: -1.12em;          /* was -1.05em → slight lift */
+  top: -1.1em;          /* subtle but real lift */
+  margin-left: 0.42em;  /* clear move to the right */
 
   color: var(--accent);
-  text-decoration: none;
-  opacity: 0.85;
+  opacity: 0.75;
 
+  text-decoration: none;
   white-space: nowrap;
+}
+
+.note-sup:hover,
+.note-sup:focus {
+  text-decoration: underline;
+  text-underline-offset: 0.08em;
 }
 
 .note-sup:hover,
