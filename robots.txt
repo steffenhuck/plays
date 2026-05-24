@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://steffenhuck.github.io/plays/sitemap_plays.xml
+Sitemap: https://steffenhuck.github.io/plays/sitemap.xml
